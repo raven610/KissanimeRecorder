@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kissanime Recorder</title>
+    <script src="./mylist.js"></script>
+    <script src="https://kit.fontawesome.com/18acfd2ecf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        table{
+            font-size: large;
+        }
+        button{
+            height: 45px;
+            width: 200px;
+        }
+        .fa-plus{
+            color: lightgreen;
+            padding: 2px;
+            border: 1px solid lightgreen;
+        }
+        .fa-plus:active{
+            color: white;
+            background-color: lightgreen;
+        }
+        
+        .fa-minus{
+            color: lightcoral;
+            padding: 2px;
+            border: 1px solid lightcoral;
+        }
+        .fa-minus:active{
+            color: white;
+            background-color: lightcoral;
+        }
+        #watched{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;    
+        }
+    </style>
+</head>
+<body>
+    <div class ="container" style="display: flex;flex-direction: row;justify-content: center; margin-bottom: 15px;margin-top: 15px;">
+        <h1>Kiss<span style="color: lightcoral;">Anime</span> Recorder <i class="fas fa-dragon" style="color: lightcoral;"></i></h1>
+    </div>
+
+    <div class="container alerts"></div>        
+    
+    <div class="container">
+        <table class="table">
+            <thead>
+                <th>Anime</th>
+                <th>Watched</th>
+                <th>Episodes</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <hr>
+    </div>
+
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-evenly;">
+            <button class="btn btn-outline-primary" onclick="save()">Save</button>
+            <button class="btn btn-outline-warning" onclick="location='/'">Add To List</button>
+            <button class="btn btn-outline-success" onclick="update()" >Update List</button>
+        </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>

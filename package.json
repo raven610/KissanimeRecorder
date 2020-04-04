@@ -1,0 +1,26 @@
+{
+  "name": "kissanime-recorder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "concurrently --kill-others \"http-server .\" \"node server.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "heroku-proxy": "^2.1.1",
+    "http-server": "^0.12.1",
+    "mocha": "^7.1.1",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6",
+    "nodemon": "^2.0.2",
+    "puppeteer": "^2.1.1"
+  }
+}
